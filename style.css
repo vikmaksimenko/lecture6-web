@@ -1,10 +1,154 @@
-h1 {
-  color: green;                           /* колір шрифту */
-  background: #EEE;                       /* колір фону (16-ричний формат)*/
-  font-family: "Courier New", monospace;  /* шрифт */
-  height: 50px;                           /* висота елементу */
+
+/*CSS styling below about main theme*/
+
+html {
+  height: 100%;
+}
+body {
+  color: white;
+  list-style-position: inside;
+  text-align: justify;
+  margin-top: 150px;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding:0;
+  font-family: sans-serif;                          /* шрифт */
+  background: linear-gradient(#141e30, #243b55);    /* колір фону (16-ричний формат)*/
+}
+
+/*CSS styling below about layout for cards*/
+
+.grid-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*CSS styling below about cards and their elements*/
+
+.card {
+  margin: auto;
+  width: 400px;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.card h1 {
+  color: white;                            /* колір шрифту */
+  text-align: center;
+  font-family: "Courier New", monospace;   /* шрифт */
   width: 50%;                             /* ширина елементу */
-  border: solid black 5px;                /* стиль границі елементу */
-  padding: 20px;                          /* відступ від границі елементу до його контенту*/
-  margin: 20px;                           /* відступ від границі елементу до іншого елементу */
+  border: solid white 3px;                 /* стиль границі елементу */
+  margin:auto;
+  padding: inherit;
+}
+
+.card h2 {
+  margin: 0 0 30px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.card h3 {
+  margin: 30px 0 30px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.card img {
+  width:50%;
+  height:50%;
+  align-self: center;
+}
+
+/*CSS styling below is about inputs, buttons, links (glowing while hovering over it) */
+
+.card a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 30px;
+  letter-spacing: 4px
+}
+
+.card a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.card input[type='button'] {
+  position: relative;
+  align-items: center;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 15px;
+  letter-spacing: 4px
+}
+
+.card input[type='button']:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.card input[type='text'] {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+    border-left: 1px solid $grey;
+    border-top: 1px solid $grey;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(1,1,1,100);
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }

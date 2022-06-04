@@ -30,3 +30,11 @@ document.getElementById('loadItems').addEventListener('click', () => {
   xhttp.open('GET', '_items.html', true);
   xhttp.send();
 })
+
+// "Видалити всі нагадування"
+document.getElementById('deleteAllItems').addEventListener('click', () => {
+  // Знаходимо елемент "Мій список"
+  let myList = document.getElementById('myList');
+  // Видаляємо (очищуємо) увесь вміст
+  myList.innerHTML = '';
+})

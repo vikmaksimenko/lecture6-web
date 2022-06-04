@@ -6,14 +6,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Моя перша сторінка</h1>
-  <div class="todoList">
-    <h3>Список задач</h3>
-    <ul id="myList">
-    </ul>
-    <input type="text" name="newItemInput" id="newItemInput">
-    <input type="button" name="addListItem" value="Додати задачу" id="addListItem">
-    <input type="button" name="loadItems" value="Завантажити задачі" id="loadItems">
+  <div class="grid-container">
+    <div class="card">
+      <h1>Моя перша сторінка</h1>
+        <h3>Список нагадувань:</h3>
+          <ul id="myList">
+          </ul>
+            <input type="text" name="newItemInput" id="newItemInput">
+            <input type="button" name="addListItem" value="Додати нагадування" id="addListItem">
+            <input type="button" name="loadItems" value="Завантажити нагадування" id="loadItems">
+            <input type="button" name="deleteAllItems" value="Видалити всі нагадування" id="deleteAllItems">
+    </div>
+    <div class="card">
+      <h2>Andrii Obitotskyi</h2>
+        <div class='center'>
+          <img src="https://i.postimg.cc/Hxfr5XLp/myImage.jpg" alt="myPhoto">
+          <a href="https://github.com/Obitotski" title="Here you can find my GitHub page" >My GitHub</a>
+        </div>
+    </div>
   </div>
   <div id="dataLoader">
 
